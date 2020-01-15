@@ -1,27 +1,36 @@
 <html>
     <head>
+        <!-- This is survey page fo freeCodeCamp course-->
         <title>This is survey form for code-camp</title>
+        <!-- Link to CSS page -->
         <link rel="stylesheet" type="text/css" href="SurveyForm.css">
+        <!-- Link to font -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
+        <!-- Header -->
         <h1 id="title">Survey form</h1>
         <p id="description">Let us know what do you think about Attack on Titan (anime and manga)</p>
         </header>
+        <!-- Creating the form -->
         <form id="survey-form" class="survey-form">
+            <!-- Input for name -->
             <div class="my-form">
                 <label for="name" id="name-label" class="left-col">*Name</label>
                 <input id="name" type="text" required minlength="3" maxlength="40" placeholder="Enter your name" class="right-col">
             </div>
+            <!-- Input for Email-->
             <div class="my-form">
                 <label for="email" id="email-label" class="left-col">*Email</label>
                 <input id="email" type="email" required placeholder="Enter your Email" class="right-col">
             </div>
+            <!-- Input for age -->
             <div class="my-form">
                 <label for="number" id="number-label" class="left-col">*Age</label>
                 <input id="number" type="number" required min="1" max="130" placeholder="Enter your age" class="right-col">
             </div>
+            <!-- Dropdownlist for type of story -->
             <div class="my-form">
                 <label for="dropdown" class="left-col">What have you read/seen?</label>
                 <select id="dropdown" class="right-col">
@@ -32,6 +41,7 @@
                     <option value="none">None of them</option>
                 </select>
             </div>
+            <!-- Radiobuttons for rating title -->
             <div class="my-form">
                 <label class="left-col">How do you think Attack on Titan is good (from human to king titan)?</label>
                 <div>
@@ -57,8 +67,9 @@
                     </label><br>
                 </div>
             </div>
+            <!-- Checkboxes for favorite character -->
             <div class="my-form">
-                <label class="left-col">Choose your favourite character(s):</label>
+                <label class="left-col">Choose your favorite character(s):</label>
                 <div>
                     <label for="eren" class="right-col">
                         <input id="eren" type="checkbox" name="character" value="Eren">
@@ -102,7 +113,7 @@
                     </label><br>
                 </div>
             </div>
-            <!-- Continue here! -->
+            <!-- Radiobuttons to rate music in show -->
             <div class="my-form">
                 <label class="left-col">What do you think about music in the show?</label>
                 <div>
@@ -124,10 +135,12 @@
                     </label><br>
                 </div>
             </div>
+            <!-- Textarea to leave feedback -->
             <div class="my-form">
                 <label for="comment" class="left-col">Please tell us what you think about Attack on Titan:</label>
                 <textarea id="comment" maxlength="300" placeholder="Input your opinion here" class="right-col"></textarea>
             </div>
+            <!-- Button to submit answers -->
             <div class="my-form">
                 <button id="submit" type="submit">Submit</button>
             </div>
